@@ -44,8 +44,14 @@ body.noscript .toggle-btn {
 .logo {
   padding: .5em;
   height: auto;
-  width: 20%;
+  width: 80px;
   display: block;
+  float: left;
+}
+
+h1 {
+  padding-top: .5em;
+  color: #c01a59;
 }
 
 header {
@@ -68,20 +74,20 @@ header {
 }
 
 .navigation li:first-child a {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid white;
 }
 
 .navigation li a {
   display: block;
   text-align: center;
-  padding: .5em 1em;
-  border-bottom: 1px solid #ccc;
+  padding: 1.5em 1em;
+  border-bottom: 1px solid white;
   text-decoration: none;
 }
 
 .toggle-btn,
 .close-btn {
-  color: #222;
+  color: #c01a59;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -93,7 +99,7 @@ header {
   width: 40px;
   display: inline-block;
   padding: 13px 11px;
-  border: 1px solid #ccc;
+  border: 1px solid #c01a59;
 }
 
 .toggle-btn span,
@@ -111,8 +117,8 @@ header {
 
 .billboard {
   background-image: url(../img/1.jpg);
-  width: 100%;
-  height: 61vh;
+  width: 720px;
+  height: 100vh;
   background-position: center top, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 100px, cover;
@@ -165,6 +171,42 @@ header {
 body.noscript {
   position: static;
   right: auto;
+}
+
+.billboard {
+  background-image: url(../img/2.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center top, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100px, cover;
+}
+
+@media only screen and (min-width: 90em) {
+  .navigation ul {
+    padding: 0;
+  }
+  .navigation li {
+    list-style-type: none;
+  }
+  .navigation li:first-child a {
+    border-top: 1px solid white;
+  }
+  .navigation li a {
+    display: block;
+    text-align: center;
+    padding: .5em 1em;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+  }
+  .billboard {
+    background-image: url(../img/3.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center top, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100px, cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
